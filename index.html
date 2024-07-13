@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asteroid Collision</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000;
+        }
+        .game-container {
+            position: relative;
+            width: 800px;
+            height: 600px;
+            background-color: #000;
+            overflow: hidden;
+            border: 2px solid #fff;
+        }
+        .spaceship {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            font-size: 40px;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .asteroid {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            font-size: 40px;
+        }
+        .score {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #fff;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <div class="spaceship" id="spaceship">🚀</div>
+        <div class="score" id="score">Score: 0</div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 
+
+
